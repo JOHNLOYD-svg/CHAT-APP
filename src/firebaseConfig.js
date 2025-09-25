@@ -6,12 +6,13 @@ import { getDatabase, ref, set, push, onValue, off, get } from "firebase/databas
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCmhCZYGR04UpFzO8yUXQtATASQyjzs1sc",
-  authDomain: "gaming-fcf9a.firebaseapp.com",
-  projectId: "gaming-fcf9a",
-  storageBucket: "gaming-fcf9a.firebasestorage.app",
-  messagingSenderId: "208712843986",
-  appId: "1:208712843986:web:7620ef5454c3df7594630b"
+  apiKey: "AIzaSyB3O4dCO_q6TfkFaOSpZyD1D3FqUFEfLz8",
+  authDomain: "chat-app-697c4.firebaseapp.com",
+  databaseURL: "https://chat-app-697c4-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "chat-app-697c4",
+  storageBucket: "chat-app-697c4.firebasestorage.app",
+  messagingSenderId: "843161418200",
+  appId: "1:843161418200:web:bde6dbbd548db8f7175aad"
 };
 
 // Initialize Firebase

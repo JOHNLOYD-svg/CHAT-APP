@@ -556,7 +556,7 @@ const Chat = () => {
 
 					{/* Message Input */}
 					{currentUser ? (
-						<form onSubmit={handleSend} noValidate style={{
+						<form noValidate style={{
 							padding: "1.5rem",
 							borderTop: "2px solid #e0e0e0",
 							display: "flex",
@@ -567,11 +567,7 @@ const Chat = () => {
 							<input
 								type="text"
 								value={message}
-								onChange={(e) => {
-									// Prevent any automatic form submission
-									e.preventDefault();
-									setMessage(e.target.value);
-								}}
+								onChange={(e) => setMessage(e.target.value)}
 								onKeyDown={(e) => {
 									// Prevent Enter key from submitting if message is empty
 									if (e.key === 'Enter' && !message.trim()) {
@@ -594,8 +590,9 @@ const Chat = () => {
 								onBlur={(e) => e.target.style.borderColor = "#ddd"}
 							/>
 							<button
-								type="submit"
+								type="button"
 								disabled={!message.trim() || isLoading}
+								onClick={handleSend}
 								style={{
 									padding: "1rem 2rem",
 									background: !message.trim() || isLoading ? "#ccc" : "#007bff",
