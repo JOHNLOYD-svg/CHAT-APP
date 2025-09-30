@@ -56,7 +56,7 @@ const Chat = () => {
 					const demoMessage = {
 						id: Date.now().toString(),
 						user: "Chat System",
-						text: "🎉 Welcome to the chat! This is a demo message to show the system is working. You can now send your own messages!",
+						text: "🎉 Welcome to ChatAPP! Your conversations, your way. Start chatting, share moments, or explore new connections. It's all just a message away.",
 						timestamp: Date.now(),
 						status: 'demo'
 					};
